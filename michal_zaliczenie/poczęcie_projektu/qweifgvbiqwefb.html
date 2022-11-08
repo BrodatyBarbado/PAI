@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+
+<script>
+<!-- Hide & Show -->
+$(document).ready(function(){
+$("#hide").click(function(){
+$("p").hide();
+});
+
+$("#show").click(function(){
+$("p").show();
+});
+});
+
+<!-- FadeIn-->
+$(document).ready(function(){
+$("#pokaz").click(function(){
+$("#siema").fadeIn("slow");
+});
+});
+
+<!-- FadeOut-->
+$(document).ready(function(){
+$("#zchowaj").click(function(){
+$("#siema").fadeOut("slow");
+});
+});
+
+<!-- SlideDown-->
+$(document).ready(function(){
+$("#Down").click(function(){
+});
+});
+
+<!-- SlideUp-->
+$(document).ready(function(){
+$("#Down").click(function(){
+$("#panel").slideToggle("slow");
+});
+});
+</script>
+
+
+
+<style>
+#panel, #Down {
+padding: 12px;
+text-align: center;
+background-color: yellow;
+border: solid 1px black;
+}
+
+
+
+#panel {
+padding: 100px;
+display: none;
+}
+</style>
+
+
+
+</head>
+<body>
+
+
+
+<button id="hide">1</button>
+<button id="show">2</button>
+
+
+
+<p>WAZZUP</p>
+
+
+
+<button id="pokaz">PRZYWITANIE</button>
+<button id="zchowaj">POZEGNANIE</button><br><br>
+
+
+
+<div id="siema" style="width:100px;height:150px;display:none;background-color:black;"></div><br>
+
+
+
+
+<div id="Down">Ukryty skarb Jacka Sparrowa</div>
+<div id="panel">Witam serdecznie z tej strony skarb</div>
+
+
+
+</body>
+</html>
